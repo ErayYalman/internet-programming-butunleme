@@ -1,0 +1,604 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/*
+01. Theme Typo
+02. Header
+	02.1 Top Strip
+		02.1.1 Top Info
+		02.1.2 Search
+	02.1 Logo
+	02.2 Navigation
+		02.2.1 SubMenu
+		02.2.1 MegaMenu
+03. Content
+
+	03.1 Blog
+		03.1.2 Blog Grid
+		03.1.3 Blog Large
+		03.1.4 Blog Detail
+ 
+	03.3 Default Pages Style
+		03.3.1 404
+		03.3.2 Services
+		03.3.3 No Search Result
+		03.3.4 Contact Us
+        03.3.5 PricePlan
+        03.3.6 Faq
+        03.3.7 About Us
+
+	03.4 Projects
+		03.4.1 Project Grid
+		03.4.2 Project Medium
+		03.4.3 Project Modren
+		03.4.4 Artist Detail
+
+	03.5 Team
+		03.5.1 Team Grid
+		03.5.2 Team Detail
+
+	03.6 Shop
+		03.6.1 Shop Grid
+		03.6.2 Shop Detail
+ 
+04. Sidebar Widget
+	04.1 Widget CATEGORY WIDGET
+	04.2 Widget Latest News
+	04.3 Widget Calendar Archive
+	04.4 Widget Text
+	04.5 Widget Recent Posts
+	04.7 Widget Intagram Photos
+	04.8 Popular Tags
+	04.9 User Links
+ 
+05. Footer
+    05.1 Footer Widgets
+    05.2 CopyRight
+*/
+
+
+
+
+
+/* SubHeader */
+.sportsmagazine-subheader {
+    float: left;
+    width: 100%;
+}
+.sportsmagazine-subheader {
+    background: url(extra-images/sub-header.jpg);
+    padding: 82px 0 132px;
+    position: relative;
+    background-position: center;
+    text-align: center;
+}
+.sportsmagazine-subheader:before {
+    content: '';
+    position: absolute;
+    width: 51%;
+    height: 38px;
+    background-color: #ffffff;
+    bottom: -18px;
+    left: 0px;
+    z-index: 1;
+}
+.sportsmagazine-subheader:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 38px;
+    background-color: #ffffff;
+    bottom: -18px;
+    right: 0px;
+    z-index: 1;
+}
+.subheader-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #000;
+}
+.sportsmagazine-subheader h1 {
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.sportsmagazine-breadcrumb {
+    display: inline-block;
+    background-color: #292c31;
+    padding: 7px 15px 5px 13px;
+}
+.sportsmagazine-breadcrumb li {
+    display: inline-block;
+    font-size: 12px;
+    list-style: none;
+    position: relative;
+    padding: 0px 7px 0px 7px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sportsmagazine-breadcrumb li:first-child:before     { display: none; }
+.sportsmagazine-breadcrumb li:before {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 9px;
+    position: absolute;
+    left: -3px;
+    bottom: 10px;
+}
+.sportsmagazine-breadcrumb li a                      { color: #fff;}
+
+
+
+
+
+
+/* Widget Ranking */
+.ranking-title-table {
+    display: table;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 16px 0px 15px 30px;
+}
+.ranking-title-row                      { display: table-row; }
+.ranking-title-table li:first-child     { padding: 0px; }
+.ranking-title-table li:last-child      { padding-right: 0px; }
+.ranking-title-table li {
+    display: table-cell;
+    list-style: none;
+    color: #292c31;
+    font-weight: bold;
+    padding: 0px 2px;
+}
+.ranking-content-table {
+    display: table;
+    width: 100%;
+    padding: 0px 10px 0px 17px;
+}
+.ranking-content-row { display: table-row; }
+.ranking-content-table li {
+    display: table-cell;
+    list-style: none;
+    color: #292c31;
+    vertical-align: middle;
+    padding: 16px 13px 12px 13px;
+}
+.ranking-content-table img {
+    float: left;
+    width: 28px;
+    margin: -4px 0px 0px 0px;
+}
+.ranking-content-table img ~ .ranking-logo { margin-left: 38px; }
+.ranking-logo { line-height: 1; }
+.ranking-logo span {
+    display: block;
+    line-height: 1;
+}
+.ranking-logo small {
+    font-size: 10px;
+    color: #555555;
+}
+.ranking-content-table li:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 7px 12px 13px;
+}
+.ranking-content-table li:nth-child(2) { width: 47%; }
+.ranking-content-table:nth-child(even) { background-color: #f5f5f5; }
+
+
+/* Match Result */
+.sportsmagazine-match-result {
+    float: left;
+    width: 100%;
+    background: url(images/match-result-bg.png);
+    background-repeat: no-repeat;
+    background-color: #292c31;
+    margin-bottom: 40px;
+}
+.sportsmagazine-match-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 31px 0px 23px 0px;
+}
+.sportsmagazine-match-title h4 {
+    color: #292c31;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+.sportsmagazine-match-title span {
+    color: #292c31;
+    font-size: 14px;
+}
+.sportsmagazine-match-result ul {
+    float: left;
+    width: 100%;
+}
+.sportsmagazine-match-result ul li {
+    float: left;
+    width: 26%;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 51px;
+    position: relative;
+}
+.sportsmagazine-match-result ul li h5 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 7px;
+    position: relative;
+}
+.sportsmagazine-match-result ul li p {
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+.sportsmagazine-match-result ul li.sportsmagazine-match-score {
+    width: 47%;
+    padding: 75px 0px 0px 0px;
+}
+.sportsmagazine-match-result ul li.sportsmagazine-match-score small {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 7px;
+}
+.sportsmagazine-match-result ul li img { margin-bottom: 17px; }
+.sportsmagazine-match-result ul li h4 {
+    font-weight: bold;
+    margin-bottom: 1px;
+    line-height: 1;
+}
+.sportsmagazine-match-result ul li span {
+    font-size: 13px;
+    color: #ffffff;
+}
+.sportsmagazine-match-result ul li h4 a { color: #ffffff; }
+/* Blog's */
+.sportsmagazine-blog,.sportsmagazine-blog-grid figure,
+.sportsmagazine-blog-grid figure img,.sportsmagazine-blog-grid figure > a,
+.sportsmagazine-blog-grid section {
+    float: left;
+    width: 100%;
+}
+.sportsmagazine-blog ul li              { list-style: none; }
+.sportsmagazine-blog > ul > li          { margin-bottom: 30px; }
+
+
+/* Widget Next Match Title */
+.widget_next_match_title,.widget_next_match ul,
+.widget_match_countdown {
+    float: left;
+    width: 100%;
+}
+.widget_next_match_title { text-align: center; }
+.widget_next_match_title h5 {
+    color: #27282a;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+.widget_next_match_title { margin-bottom: 25px; }
+.widget_next_match_title span {
+    font-size: 12px;
+    color: #666666;
+}
+.widget_next_match ul li {
+    float: left;
+    list-style: none;
+    width: 28%;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.widget_next_match ul li:nth-child(2) { width: 44%; }
+.widget_next_match ul li img { margin-bottom: 11px; }
+.widget_next_match ul li h6 {
+    color: #292a2c;
+    font-weight: bold;
+    margin-bottom: 3px;
+    line-height: 1;
+}
+.widget_next_match ul li small {
+    color: #666666;
+    font-size: 10px;
+}
+.widget_next_match_option {
+    display: inline-block;
+    width: 110px;
+    background-color: #27282a;
+    padding: 13px 0px 14px 0px;
+    position: relative;
+    margin-top: 21px;
+}
+.widget_next_match_option:before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0px;
+    border-top: 30px solid transparent;
+    border-right: 11px solid #27282a;
+    border-bottom: 30px solid transparent;
+}
+.widget_next_match_option:after {
+    content: '';
+    position: absolute;
+    right: -11px;
+    top: 0px;
+    border-top: 30px solid transparent;
+    border-left: 11px solid #27282a;
+    border-bottom: 30px solid transparent;
+}
+.widget_next_match ul li .widget_next_match_option h6,.widget_next_match ul li .widget_next_match_option small { color: #ffffff; }
+.widget_match_countdown {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.widget_match_countdown h6 {
+    display: inline-block;
+    background-color: #f7f7f7;
+    color: #27282a;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding: 14px 50px 15px 50px;
+    position: relative;
+}
+.widget_match_countdown h6:before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 0px;
+    border-top: 52px solid #f7f7f7;
+    border-left: 22px solid transparent;
+}
+.widget_match_countdown h6:after {
+    content: '';
+    position: absolute;
+    right: -22px;
+    top: 0px;
+    border-top: 52px solid #f7f7f7;
+    border-right: 22px solid transparent;
+}
+.widget_match_countdown .is-countdown {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.widget_match_countdown .is-countdown .countdown-section {
+    float: left;
+    width: 25%;
+    border-left: 1px solid #ececec;
+    padding: 24px 0px 23px 0px;
+}
+.widget_match_countdown .is-countdown .countdown-section:first-child { border: none; }
+.widget_match_countdown .is-countdown .countdown-amount {
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+    color: #27282a;
+}
+.widget_match_countdown .is-countdown .countdown-period {
+    font-size: 12px;
+    color: #27282a;
+    text-transform: uppercase;
+}
+.widget_match_btn {
+    float: left;
+    width: 100%;
+    background-color: #27282a;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+}
+
+/*Fixture*/
+.sportsmagazine-fixture {
+    float: left;
+    width: 100%;
+}
+.sportsmagazine-fixture ul li {
+    list-style: none;
+    margin: 0px 0px 50px;
+}
+.sportsmagazine-fixture-wrap {
+    float: left;
+    width: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+    margin: 0px 0px 20px;
+    text-align: center;
+}
+.sportsmagazine-fixture ul li:last-child .sportsmagazine-fixture-wrap { margin: 0px;}
+.sportsmagazine-fixture-wrap:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    right: 33%;
+    top: 0px;
+}
+.sportsmagazine-teams-match {
+    float: left;
+    width: 66.6667%;
+}
+.sportsmagazine-match-view {
+    display: inline-block;
+    text-align: center;
+    margin: -20px 0px 0px;
+}
+.sportsmagazine-match-view h5 {
+    font-size: 16px;
+    margin: 0px 0px 20px;
+    background-color: #27282a;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 21px 8px 22px;
+    position: relative;
+}
+.sportsmagazine-match-view h5:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #27282a;
+    border-left: 11px solid transparent;
+}
+.sportsmagazine-match-view h5:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #27282a;
+    border-right: 11px solid transparent;
+}
+.sportsmagazine-match-view span {
+    display: inline-block;
+    background-color: #27282a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 18px 7px;
+    position: relative;
+}
+.sportsmagazine-match-view span:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 6px solid #27282a;
+    border-bottom: 20px solid transparent;
+}
+.sportsmagazine-match-view span:after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 6px solid #27282a;
+    border-bottom: 20px solid transparent;
+}
+.sportsmagazine-first-team,.sportsmagazine-second-team {
+    background-color: #ededed;
+    float: left;
+    padding: 28px 36px 29px 91px;
+    position: relative;
+}
+.sportsmagazine-first-team:before {
+    content: '';
+    position: absolute;
+    right: -103px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid #ededed;
+    border-right: 104px solid transparent;
+}
+.sportsmagazine-second-team:before {
+    content: '';
+    position: absolute;
+    left: -103px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid #ededed;
+    border-left: 104px solid transparent;
+}
+.sportsmagazine-second-team {
+    padding: 28px 76px 29px 35px;
+    margin: 0px;
+    float: right;
+}
+.sportsmagazine-first-team figure,.sportsmagazine-second-team figure {
+    margin: 0px;
+    float: right;
+    width: 55px;
+}
+.sportsmagazine-teams-match figure a img,.sportsmagazine-teams-match figure a {
+    float: left;
+    width: 100%;
+}
+.sportsmagazine-teams-match figure ~ .sportsmagazine-first-team-info {
+    margin: 0px 48px 0px 0px;
+    text-align: right;
+    padding: 17px 20px 0 0;
+    line-height: 1;
+}
+.sportsmagazine-first-team-info h6,.sportsmagazine-second-team-info h6 {
+    font-weight: bold;
+    line-height: 15px;
+    margin: 0px;
+}
+.sportsmagazine-first-team-info > span,.sportsmagazine-second-team-info > span {
+    display: inline-block;
+    font-size: 10px;
+    color: #292c31;
+}
+.sportsmagazine-second-team > figure { float: left;}
+.sportsmagazine-teams-match figure ~ .sportsmagazine-second-team-info {
+    margin: 0px 0px 0px 55px;
+    padding: 14px 0px 0px 19px;
+    line-height: 1;
+    text-align: left;
+}
+
+.sportsmagazine-buy-ticket {
+    float: left;
+    width: 33.333%;
+    padding: 34px 27px 0px 34px;
+}
+.sportsmagazine-buy-ticket-text {
+    float: left;
+    line-height: 1.5;
+}
+.sportsmagazine-buy-ticket-text h5 {
+    font-weight: bold;
+    margin: 0px 0px 4px;
+}
+.sportsmagazine-buy-ticket-text time {
+    font-size: 12px;
+    color: #292c31;
+    float: left;
+}
+.sportsmagazine-buy-ticket-text time span {
+    float: right;
+    margin: 0px 0px 0px 16px;
+}
+.ticket-buy-btn {
+    float: right;
+    font-size: 11px;
+    background-color: #27282a;
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 17px 2px 15px;
+    border-radius: 3px;
+    margin: 11px 0px 0px;
+}
+.ticket-buy-btn:hover {
+    background-color: #ffdc11;
+    color: #84701c;
+}
+/*Fixture*/
